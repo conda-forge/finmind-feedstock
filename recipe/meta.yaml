@@ -1,5 +1,5 @@
 {% set name = "finmind" %}
-{% set version = "1.0.91" %}
+{% set version = "1.1.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/FinMind-{{ version }}.tar.gz
-  sha256: ad8c0ffcb78f2f1ad7e18e56a5d1a8fc1dca58e386f213ecc72f5fd48ccd2235
+  sha256: 0ecf1c66be735da1761156a78a94dc756a4aa1d8ddf509b8ddfa3a6f7b6c9a15
 
 build:
   noarch: python
