@@ -1,18 +1,18 @@
 {% set name = "finmind" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/FinMind-{{ version }}.tar.gz
-  sha256: 791bcdbcd698d6e424eb69c7b37b8d51adb2e95553e3e6298941f94f55d6a61e
+  sha256: f201f77499634ee58a5ea7f82e9257d50d8b37e0fb440a4ff248d93718e6103f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: "financial mining"
+  summary: financial mining
   doc_url: https://linsamtw.github.io/FinMindDoc
 
 extra:
